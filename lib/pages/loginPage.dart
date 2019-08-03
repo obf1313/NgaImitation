@@ -34,6 +34,8 @@ class _LoginPageState extends State<LoginPage> {
                   style: TextStyle(color: Colors.white, fontSize: 14.0),
                 ),
                 SizedBox(height: 25.0),
+                Image.asset('assets/images/logo.png', width: 45),
+                SizedBox(height: 25.0),
                 TextFormField(
                   decoration: const InputDecoration(
                     contentPadding: EdgeInsets.all(16),
@@ -63,6 +65,7 @@ class _LoginPageState extends State<LoginPage> {
                   },
                   style: TextStyle(color: Colors.white, fontSize: 18.0),
                   obscureText: true,
+                  keyboardType: TextInputType.number,
                 ),
                 SizedBox(height: 50.0),
                 SizedBox(
