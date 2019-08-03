@@ -23,7 +23,18 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
+  # Dart 常用工具类库 https://github.com/Sky24n/common_utils
+  common_utils: ^1.1.1
+  # Flutter 常用工具类库 https://github.com/Sky24n/flustars
+  flustars: 0.2.5
+  # 异步请求流 https://github.com/ReactiveX/rxdart
+  rxdart: ^0.21.0
+  # Toast插件 https://github.com/OpenFlutter/flutter_oktoast
   oktoast: ^2.2.0
+  # 请求 https://github.com/flutterchina/dio
+  dio: ^2.1.10
+  # 格式化String https://github.com/Naddiseo/dart-sprintf
+  sprintf: ^4.0.2
 
 dev_dependencies:
   flutter_test:
