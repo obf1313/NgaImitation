@@ -1,11 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:oktoast/oktoast.dart';
-import 'package:nga/pages/loginPage.dart';
+import 'package:fluro/fluro.dart';
+import 'package:nga/pages/user/loginPage.dart';
 import 'package:nga/utils/resources/colors.dart';
+import 'package:nga/router/routes.dart';
+import 'package:nga/router/application.dart';
 
 void main() => runApp(NgaApp());
 
 class NgaApp extends StatelessWidget {
+  NgaApp() {
+    final router = Router();
+    Routes.configureRoutes(router);
+    Application.router = router;
+  }
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -27,6 +35,7 @@ class NgaApp extends StatelessWidget {
         home: Scaffold(
           body: LoginPage(),
         ),
+        onGenerateRoute: Application.router.generator
       ),
     );
   }

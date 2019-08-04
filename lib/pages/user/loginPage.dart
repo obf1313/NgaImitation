@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nga/router/application.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({ Key key }) : super( key : key);
@@ -73,7 +74,7 @@ class _LoginPageState extends State<LoginPage> {
                   height: 50.0,
                   child: RaisedButton(
                     onPressed: (){
-
+                      Application.router.navigateTo(context, 'homePage');
                     },
                     child: Text(
                       '登   录',
