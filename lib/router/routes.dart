@@ -8,7 +8,7 @@ class Routes {
 
   static void configureRoutes(Router router) {
     router.notFoundHandler = Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
-      print("ROUTE WAS NOT FOUND !!!");
+      print("该页面未找到!!!");
     });
     router.define(root, handler: rootHandler);
     router.define(homePage, handler: homePageRouteHandler, transitionType: TransitionType.fadeIn);
