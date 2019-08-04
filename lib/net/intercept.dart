@@ -4,8 +4,8 @@ import 'package:flustars/flustars.dart';
 import 'package:nga/utils/global/globalConst.dart';
 import 'package:nga/utils/others/logUtils.dart';
 import 'package:sprintf/sprintf.dart';
-import 'dioUtils.dart';
-import 'errorHandle.dart';
+import 'package:nga/net/dioUtils.dart';
+import 'package:nga/net/errorHandle.dart';
 
 class AuthInterceptor extends Interceptor{
   @override
