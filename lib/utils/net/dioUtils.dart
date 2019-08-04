@@ -1,12 +1,12 @@
 import 'dart:convert';
 import 'dart:io';
 import 'package:dio/dio.dart';
-import 'package:nga/utils/others/log_utils.dart';
+import 'package:nga/utils/others/logUtils.dart';
 import 'package:nga/utils/others/toast.dart';
 import 'package:rxdart/rxdart.dart';
-import 'package:nga/utils/net/entity_factory.dart';
-import 'base_entity.dart';
-import 'error_handle.dart';
+import 'package:nga/utils/net/entityFactory.dart';
+import 'package:nga/utils/net/model/baseEntity.dart';
+import 'errorHandle.dart';
 import 'intercept.dart';
 import 'package:nga/utils/global/globalConst.dart';
 
